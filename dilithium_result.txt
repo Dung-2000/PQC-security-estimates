@@ -1,0 +1,141 @@
+
+Uniform Dilithium Medium
+{'n': 256, 'k': 4, 'l': 4, 'gamma1': 131072, 'gamma2': 95232.0, 'q': 8380417, 'eta': 2, 'zeta': 350209.0, 'zeta_prime': 380929.0, 'pkdrop': 13}
+
+=== WEAK UF
+Attack uses block-size 423 and 2304 dimensions, with 0 q-vectors
+log2(epsilon) = -84.52, log2 nvector per run 87.78
+shortest vector used has length l=7242509.01, q=8380417, `l<q'= 1
+SIS & 2304 & 423 & 123 & 112 & 87
+=== STRONG UF
+Attack uses block-size 417 and 2304 dimensions, with 0 q-vectors
+log2(epsilon) = -82.72, log2 nvector per run 86.54
+shortest vector used has length l=7835854.32, q=8380417, `l<q'= 1
+SIS & 2304 & 417 & 121 & 110 & 86
+=== SECRET KEY RECOVERY
+Primal attacks uses block-size 424 and 977 samples; dim d=2002
+Primal & 977 & 424 & 124 & 112 & 87
+Dual attacks uses block-size 422 and 1014 samples; dim d=2038
+shortest vector used has length l=7347307.38, q=8380417, `l<q'= 1
+log2(epsilon) = -43.78, log2 nvector per run 87.57
+Dual & 1014 & 422 & 123 & 111 & 87 
+
+Uniform Dilithium Recommended
+{'n': 256, 'k': 6, 'l': 5, 'gamma1': 524288, 'gamma2': 261888.0, 'q': 8380417, 'eta': 4, 'zeta': 724481.0, 'zeta_prime': 1048576, 'pkdrop': 13}
+
+=== WEAK UF
+Attack uses block-size 638 and 3072 dimensions, with 0 q-vectors
+log2(epsilon) = -127.41, log2 nvector per run 132.40
+shortest vector used has length l=18038992.32, q=8380417, `l<q'= 0
+SIS & 3072 & 638 & 186 & 169 & 132
+=== STRONG UF
+Attack uses block-size 602 and 3072 dimensions, with 0 q-vectors
+log2(epsilon) = -122.93, log2 nvector per run 124.93
+shortest vector used has length l=25764571.45, q=8380417, `l<q'= 0
+SIS & 3072 & 602 & 176 & 159 & 124
+=== SECRET KEY RECOVERY
+Primal attacks uses block-size 624 and 1319 samples; dim d=2600
+Primal & 1319 & 624 & 182 & 165 & 129
+Dual attacks uses block-size 622 and 1286 samples; dim d=2566
+shortest vector used has length l=4885651.35, q=8380417, `l<q'= 1
+log2(epsilon) = -64.52, log2 nvector per run 129.08
+Dual & 1286 & 622 & 181 & 164 & 129 
+
+Uniform Dilithium Very High
+{'n': 256, 'k': 8, 'l': 7, 'gamma1': 524288, 'gamma2': 261888.0, 'q': 8380417, 'eta': 2, 'zeta': 769537.0, 'zeta_prime': 1048576, 'pkdrop': 13}
+
+=== WEAK UF
+Attack uses block-size 909 and 4096 dimensions, with 0 q-vectors
+log2(epsilon) = -183.75, log2 nvector per run 188.63
+shortest vector used has length l=22350890.53, q=8380417, `l<q'= 0
+SIS & 4096 & 909 & 265 & 241 & 188
+=== STRONG UF
+Attack uses block-size 868 and 4096 dimensions, with 0 q-vectors
+log2(epsilon) = -175.61, log2 nvector per run 180.13
+shortest vector used has length l=30038963.92, q=8380417, `l<q'= 0
+SIS & 4096 & 868 & 253 & 230 & 180
+=== SECRET KEY RECOVERY
+Primal attacks uses block-size 864 and 1645 samples; dim d=3438
+Primal & 1645 & 864 & 252 & 229 & 179
+Dual attacks uses block-size 860 and 1664 samples; dim d=3456
+shortest vector used has length l=10489086.42, q=8380417, `l<q'= 0
+log2(epsilon) = -89.22, log2 nvector per run 178.47
+Dual & 1664 & 860 & 251 & 228 & 178 
+UNIFORM DILITHIUM TABLE
+========================
+\hline
+BKZ block-size $b$ to break SIS & 
+417
+ & 
+602
+ & 
+868
+ & 
+0
+\\
+Best Known Classical bit-cost & 
+121
+ & 
+176
+ & 
+253
+ & 
+0
+\\
+Best Known Quantum bit-cost & 
+110
+ & 
+159
+ & 
+230
+ & 
+0
+\\
+Best Plausible bit-cost & 
+86
+ & 
+124
+ & 
+180
+ & 
+0
+\\
+\hline
+BKZ block-size $b$ to break LWE & 
+422
+ & 
+622
+ & 
+860
+ & 
+0
+\\
+Best Known Classical bit-cost & 
+123
+ & 
+181
+ & 
+251
+ & 
+0
+\\
+Best Known Quantum bit-cost & 
+111
+ & 
+164
+ & 
+228
+ & 
+0
+\\
+Best Plausible bit-cost & 
+87
+ & 
+129
+ & 
+178
+ & 
+0
+\\
+\hline
+========================

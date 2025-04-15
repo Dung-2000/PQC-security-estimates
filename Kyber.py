@@ -43,18 +43,29 @@ def communication_costs(ps):
 
 
 def summarize(ps):
-    print ("params: ", ps.__dict__)
-    print ("com costs: ", communication_costs(ps))
+    #print ("params: ", ps.__dict__)
+    #print ("com costs: ", communication_costs(ps))
+    Pk, CT = communication_costs(ps)
     F, f = p2_cyclotomic_error_probability(ps)
     print ("failure: %.1f = 2^%.1f"%(f, log(f + 2.**(-300))/log(2)))
+    return []
 
 
 if __name__ == "__main__":
     # Parameter sets
     # n k eta_1 eta_2 q bit_of_q du dv , eta_2 if eta_1 != eta_2
-    for k in range(3, 4) :
-        for eta_1 in range(2, 3):
-            for eta_2 in range(2, 3):
+
+    tmp_ps_test = KyberParameterSet(256, 4, 4, 4, 7681, 2**13, 2**11, 2**4, ke_ct=3)
+    print ("Kyber (modified):")
+    print ("--------------------")
+    print ("security:")
+    MLWE_summarize_attacks(Kyber_to_MLWE(tmp_ps_test))
+    summarize(tmp_ps_test)
+    print () 
+    '''
+    for k in range(3, 5) :
+        for eta_1 in range(2, 4):
+            for eta_2 in range(2, 4):
                 try:
                     tmp_ps_test = KyberParameterSet(256, k, eta_1, eta_2, 7681, 2**13, 2**8, 2**12, ke_ct=2)
                     print ("Kyber (modified):")
@@ -65,6 +76,7 @@ if __name__ == "__main__":
                     print () 
                 except Exception as e:
                     print(e)
+    '''
     #ps_modified = KyberParameterSet(256, 4, 3, 3, 7681, 2**13, 2**8, 2**12, ke_ct=2)
     #ps_light = KyberParameterSet(256, 2, 3, 3, 3329, 2**12, 2**10, 2**4, ke_ct=2)
     #ps_recommended = KyberParameterSet(256, 3, 2, 2, 3329, 2**12, 2**10, 2**4)
